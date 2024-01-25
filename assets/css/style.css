@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root
+{
+    --vermelhodiniz:#C4161C;
+    --color-neutral-0: #262626;
+    --color-neutral-10: #343737;
+    --color-whiteDiniz: #FCFCFC;
+}
+
+
+
+
+/* inicio navbar */
+.navbar-nav .nav-link {
+    color: #fff;
+  }
+  .dropend .dropdown-toggle {
+    color: rgb(255, 49, 27);
+    margin-left: 1em;
+  }
+  .dropdown-item:hover {
+    background-color: var(--vermelhodiniz);
+    color: #fff;
+  }
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+  .dropdown:hover > .dropdown-menu,
+  .dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+  }
+  @media screen and (min-width: 769px) {
+    .dropend:hover > .dropdown-menu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+    .dropend .dropdown-toggle {
+      margin-left: 0.5em;
+    }
+  }
+
+  /* fim nav bar */
+
+  .titulomarcas h2
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem;
+  }
+
+
+
+  /* inicio animacao logo */
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .containermarcas {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .containermarcas:before,
+  .containermarcas:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .containermarcas:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .containermarcas:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .containermarcas:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 70px;
+    margin: 0 40px;
+  }
+
+  /* fim animacao logo */
+
+
+
+  
+.formasdepagamentos
+{
+  width: 100%;
+  background-color: #F1F1F1;
+  height:25%;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  padding: 3rem;
+  color: #666666;
+}
+
+.copyright
+{
+  width: 100%;
+  height: 8rem;
+  color: #e3ffff;
+  font-weight: 500;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.mapaecontato
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  
+}
+
+@media (max-width: 768px) {
+  .mapaecontato {
+    grid-template-columns: 1fr; /* Um abaixo do outro */
+  }
+}
+
+.mapBox
+{
+  padding: 1rem;
+}
+
+.como
+{
+  padding: 1rem;
+}
+
+
