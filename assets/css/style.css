@@ -378,5 +378,12 @@
 {
   
   min-height: 8rem;
+  width: 100%;
 
 }
+
+.container-fluid span
+{
+  font-size: 1rem;
+}
+

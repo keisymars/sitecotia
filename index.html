@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="shortcut icon" href="assets/img/favicon.ico"/>
+
+  
   <title>Óticas Diniz Cotia | Óculos de grau, armações e lentes de contato</title>
 </head>
 <body>
@@ -16,21 +18,28 @@
 <!-- inicio navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#C4161C;">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" id="homepage" href="https://oticasdinizcotia.com.br/"> <img src="assets/img/logos/diniz.png" alt="logo das óticas diniz cotia">Cotia </a>
+      <a class="navbar-brand fw-bold" id="homepage" href="https://oticasdinizcotia.com.br/"> <img src="assets/img/logos/diniz.png" alt="logo das óticas diniz cotia">  <span>Cotia</span> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+    <!-- Botão "X" escondido inicialmente -->
+    <button class="navbar-toggler close-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="display: none;">
+      <span class="close-icon">X</span>
+    </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ínicio</a>
+            <a class="nav-link active" aria-current="page" href="#"> <i class="fa-solid fa-house"></i> ínicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Produtos</a>
+            <a class="nav-link" href="#footer"> <i class="fa-solid fa-phone"></i> Contato </a>
           </li>
         
           <li class="nav-item">
-            <a class="nav-link">Como chegar</a>
+            <a class="nav-link"> <i class="fa-solid fa-location-dot"></i> Como chegar</a>
           </li>
         </ul>
       
@@ -102,7 +111,10 @@
 <div class="conteudo">
   <div class="titulomarcas">
     <h1 class="temasite">
-     As melhores marcas de óculos <br>você encontra nas Óticas Diniz Cotia </h1> 
+     Veja Melhor e com Estilo na Óticas Diniz Cotia
+    
+      </h1> 
+      <p style="text-align: center;" >Encontre os óculos perfeitos que unem moda e funcionalidade. <br> Cuidamos da saúde dos seus olhos com muito estilo. Escolha a clareza, escolha ser único.</p>
  </div>
 <div class="container mt-5">
     <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -151,32 +163,27 @@
 <!-- fim cards -->
 
 <section class="cta">
-  <a href="https://wa.me/1234567890" class="btn btn-success" target="_blank">
+  <a href="https://api.whatsapp.com/send?phone=5511953930743&text=Ol%C3%A1,%20peguei%20o%20Link%20no%20Site%20e%20quero%20falar%20com%20voc%C3%AAs!%0A%0A" class="btn btn-success" target="_blank">
     <img src="assets/img/logos/whatsapp-logo.png" alt="WhatsApp Logo" width="20" height="20" class="d-inline-block align-text-top me-2">
     Entrar em contato pelo WhatsApp
   </a>
 </section>
 
 
-
-<head>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-
 <!-- inicio testemunhos -->
+
 <div class="col-lg-10 offset-lg-1 pt-5 pb-5 bg-dark text-light">
-  <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:200px;">
+  <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="width: 100%;">
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active text-center p-4">
         <blockquote class="blockquote text-center">
           <p class="mb-0"><i class="fa fa-quote-left"></i> Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.
-            <i class="fa fa-quote-right"></p> 
+          </p>
           <br>
           <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
           <!-- Client review stars -->
           <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
-          <p class="client-review-stars">
+          <p class="client-review-stars text-warning">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -185,7 +192,6 @@
           </p>
         </blockquote>
       </div>
-
 
       <div class="carousel-item text-center p-4">
         <blockquote class="blockquote text-center">
@@ -195,15 +201,17 @@
           <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
           <!-- Client review stars -->
           <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
-          <p class="client-review-stars">
+          <p class="client-review-stars text-warning">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </p>
+          
         </blockquote>
       </div>
+
       <div class="carousel-item text-center p-4">
         <blockquote class="blockquote text-center">
           <p class="mb-0"><i class="fa fa-quote-left"></i> A person who never made a mistake never tried anything new.
@@ -212,7 +220,7 @@
           <footer class="blockquote-footer">Albert Einstein <cite title="Source Title">genius</cite></footer>
           <!-- Client review stars -->
           <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
-          <p class="client-review-stars">
+          <p class="client-review-stars text-warning">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -222,13 +230,14 @@
         </blockquote>
       </div>
     </div>
-    <ol class="carousel-indicators d-none d-sm-block">
+    <ol class="carousel-indicators" style="display: none;">
       <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
       <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
       <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
     </ol>
   </div>
 </div>
+
 <!-- fim testemunhos -->
 
 
@@ -274,17 +283,20 @@
               <div id="mc_embed_signup">
                   <form action="https://hotmail.us11.list-manage.com/subscribe/post?u=800cc7156f08c260fdbde35c0&amp;id=4b5bcb51f6&amp;f_id=00c5ace0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
                       <div id="mc_embed_signup_scroll">
-                          <h2 class="text-center">Inscrever</h2>
-                          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                          <h2 class="text-center"> Inscreva-se </h2>
+                          <p style="text-align: center;">Participe de nossa newsletter <br> para ficar por dentro de promoções, novas coleções e novidades!
+
+                          </p>
+                          <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
                           <div class="mc-field-group">
                               <label for="mce-EMAIL">Endereço de e-mail <span class="asterisk">*</span></label>
-                              <input type="email" name="EMAIL" class="required email form-control" id="mce-EMAIL" required="" placeholder="Your Email">
+                              <input type="email" name="EMAIL" class="required email form-control" id="mce-EMAIL" required="" placeholder="Digite seu melhor e-mail ">
                               <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
                           </div>
                           <!-- Restante do seu formulário... -->
                           <div class="optionalParent">
                               <div class="clear foot">
-                                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success" value="Subscribe">
+                                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success" value="Inscreva-se ">
                                   <!-- Se você quiser adicionar o link do Mailchimp -->                              </div>
                           </div>
                       </div>
@@ -294,22 +306,6 @@
       </div>
   </div>
 </div>
-
-<!-- Seu código original para o formulário de newsletter -->
-<div class="newsletter-subscribe">
-  <div class="container">
-      <div class="intro">
-          <h2 class="text-center">Subscribe for our Newsletter</h2>
-          <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-      </div>
-      <form class="form-inline" method="post">
-          <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
-          <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
-      </form>
-  </div>
-</div>
-
-
 
 
 
@@ -333,7 +329,7 @@
   </div>
 
 
-    <footer class="text-white text-center text-lg-start bg-dark">
+    <footer class="text-white text-center text-lg-start bg-dark" id="footer">
       <!-- Grid container -->
       <div class="container p-4">
         <!--Grid row-->
@@ -404,34 +400,36 @@
   
   <!-- End of .container -->
 
-<script src="assets/script.js"></script>
-<!-- Navbar script -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
-
-<!-- Animação logo -->
-<script>
-    var copy = document.querySelector(".logos-slide").cloneNode(true);
-    document.querySelector(".containermarcas").appendChild(copy);
-</script>
+  <script src="assets/script.js"></script>
+  <!-- Navbar script -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+  
+  <!-- Animação logo -->
+  <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".containermarcas").appendChild(copy);
+  </script>
 
 <!-- Carrossel -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Destaques -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- testemunhos -->
 
 
-<script>
-  $(document).ready(function() {
-    $('#client-testimonial-carousel').carousel();
-  });
-</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 
 </body>
 </html>
