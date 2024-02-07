@@ -1,0 +1,7 @@
+---
+deploy:
+  tasks:
+    - /bin/git clone https://github.com/seu-usuario/seu-repositorio.git /caminho/para/deploy
+    - /bin/cp -R /caminho/para/deploy/* /home/usuario/public_html
+    - /bin/find /home/usuario/public_html -type d -exec chmod 755 {} \;
+    - /bin/find /home/usuario/public_html -type f -exec chmod 644 {} \;
