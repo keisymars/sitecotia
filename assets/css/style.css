@@ -547,3 +547,17 @@
   color:white;
   text-align: center;
 }
+
+
+.mais
+{
+  height: fit-content;;
+  padding: 2rem;
+}
+
+
+.banner {
+  background: #a770ef;
+  background: -webkit-linear-gradient(to right, #ff2525, #dd1717, #ff773d);
+  background: linear-gradient(to right, #C4161C, rgb(206, 57, 47), #fa8480);
+}
